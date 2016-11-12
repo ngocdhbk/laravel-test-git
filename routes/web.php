@@ -22,3 +22,7 @@ Route::get('/test', function () {
 Route::get('/test2/{ten}', function ($ten) {
     return $ten;
 });
+
+Route::get('/test3/{ten}', function ($ten) {
+    return $ten;
+});
