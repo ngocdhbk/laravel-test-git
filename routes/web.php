@@ -26,3 +26,11 @@ Route::get('/test2/{ten}', function ($ten) {
 Route::get('/test3/{ten}', function ($ten) {
     return $ten;
 });
+
+Route::get('/test4/{ten}', function ($ten) {
+    return $ten;
+});
+
+Route::get('/test5/{ten}', function ($ten) {
+    return $ten;
+});
