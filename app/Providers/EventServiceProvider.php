@@ -27,6 +27,10 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        //
+        //Or event could be list manually here, for example
+        Event::listen('event.name', function ($foo, $bar) {
+            //
+        });
+
     }
 }
