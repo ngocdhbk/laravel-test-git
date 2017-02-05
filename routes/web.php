@@ -15,6 +15,39 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/testForm', function () {
+    return view('welcome2');
+});
+
+Route::get('/testDatabase', function () {
+	if(DB::connection()->getDatabaseName())
+   {
+     echo "connected successfully to database ".DB::connection()->getDatabaseName();
+   } else {
+   	 echo "Error connection to databse";
+   }
+    
+});
+
+Route::get('/testCDN', function () {
+    return view('test_CDN_Bootstrap');
+});
+
+Route::get('/testBootstrap', function () {
+    return view('testBootstrap');
+});
+
+Route::get('/bootstrap', function () {
+    return view('firstbootstrap');
+});
+
+Route::get('/bootstrap_master', function () {
+    return view('master');
+});
+
+Route::get('index', "test@index");
+Route::post('store', "test@store");
+
 Route::get('/test', function () {
     return "Hello world";
 });
